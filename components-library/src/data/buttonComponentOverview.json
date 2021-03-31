@@ -1,0 +1,82 @@
+{
+  "id": 2,
+  "name": "Button",
+  "componentName": "GSButton",
+  "description": "This is an example of description that could be used for this kind of situations where your dont know what to say",
+  "api": [
+    {
+      "id": 1,
+      "propertyName": "color",
+      "defaultValue": "Primary",
+      "description": "you can choose between a variety of color buttons"
+    },
+    {
+      "id": 2,
+      "propertyName": "placeholder",
+      "defaultValue": "Default Button",
+      "description": "choose the placeholder"
+    },
+    {
+      "id": 3,
+      "propertyName": "size",
+      "defaultValue": "Small",
+      "description": "with this property you choose the size of the button"
+    },
+    {
+      "id": 4,
+      "propertyName": "style",
+      "defaultValue": "Standard",
+      "description": "with this property you can set the style of the button"
+    },
+    {
+      "id": 5,
+      "propertyName": "disabled",
+      "defaultValue": false,
+      "description": "with this property you disable the button"
+    },
+    {
+      "id": 6,
+      "propertyName": "onClick",
+      "defaultValue": "",
+      "description": "Callback function that is fired when the button is clicked"
+    }
+  ],
+  "features": [
+    {
+      "id": 1,
+      "featureName": {
+        "name": "color",
+        "description": "Color"
+      },
+      "description": "with the GSButton component you can choose between a variety of color buttons",
+      "exampleValues": ["Primary", "Secondary", "Info", "Warning", "Danger"]
+    },
+    {
+      "id": 2,
+      "featureName": {
+        "name": "size",
+        "description": "Size"
+      },
+      "description": "Choose the size of the GSButton that you prefer",
+      "exampleValues": ["Small", "Medium", "Large"]
+    },
+    {
+      "id": 3,
+      "featureName": {
+        "name": "style",
+        "description": "Style"
+      },
+      "description": "You can choose the style that you prefer for the GSButton component",
+      "exampleValues": ["Standard", "Rounded", "Raised", "Text"]
+    },
+    {
+      "id": 4,
+      "featureName": {
+        "name": "disabled",
+        "description": "Disabled"
+      },
+      "description": "disable your GSAutocomplete component",
+      "exampleValues": [true]
+    }
+  ]
+}

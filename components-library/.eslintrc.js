@@ -20,5 +20,9 @@ module.exports = {
         extensions: ['.js', '.jsx'],
       },
     ],
+    'react/jsx-curly-brace-presence': [
+      0,
+      { props: '<string>', children: '<string>' },
+    ],
   },
 };
