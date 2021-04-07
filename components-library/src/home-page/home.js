@@ -1,75 +1,35 @@
+/* eslint-disable react/style-prop-object */
 import React from 'react';
-
-const textStyles = {
-  display: 'flex',
-  flexDirection: 'column',
-  justifyContent: 'center',
-  flex: '2',
-};
+import { Link } from 'react-router-dom';
+import 'styled-components/macro';
+import { GSButton } from 'gs-ui-library';
+import * as Styles from './homeStyles';
 
 const Home = () => (
-  <div>
-    <div style={{ height: '100%', display: 'flex' }}>
-      <div
-        style={{
-          display: 'flex',
-          flex: '1',
-          justifyContent: 'center',
-          alignItems: 'center',
-        }}
+  <Styles.HomeDiv>
+    <Styles.LibraryText>
+      <h1
+        css={`
+          font-size: 4rem;
+          font-weight: 400;
+          margin-bottom: 0;
+        `}
       >
-        <span>logo</span>
-      </div>
-      <div style={textStyles}>
-        <h1 style={{ fontSize: '4rem', color: '#0C0A3E', fontWeight: '400' }}>
-          GS Designs
-        </h1>
-        <h2 style={{ color: '#0C0A3E', fontWeight: '300' }}>
-          React components for your application
-        </h2>
-      </div>
-    </div>
-    <div style={{ height: '100%', display: 'flex' }}>
-      <div
-        style={{
-          display: 'flex',
-          flex: '1',
-          justifyContent: 'center',
-          alignItems: 'center',
-        }}
+        GS UI Library
+      </h1>
+      <h2
+        css={`
+          font-weight: 300;
+        `}
       >
-        <span>logo</span>
-      </div>
-      <div style={textStyles}>
-        <h1 style={{ fontSize: '4rem', color: '#0C0A3E', fontWeight: '400' }}>
-          GS Designs
-        </h1>
-        <h2 style={{ color: '#0C0A3E', fontWeight: '300' }}>
-          React components for your application
-        </h2>
-      </div>
-    </div>
-    <div style={{ height: '100%', display: 'flex' }}>
-      <div
-        style={{
-          display: 'flex',
-          flex: '1',
-          justifyContent: 'center',
-          alignItems: 'center',
-        }}
-      >
-        <span>logo</span>
-      </div>
-      <div style={textStyles}>
-        <h1 style={{ fontSize: '4rem', color: '#0C0A3E', fontWeight: '400' }}>
-          GS Designs
-        </h1>
-        <h2 style={{ color: '#0C0A3E', fontWeight: '300' }}>
-          React components for your application
-        </h2>
-      </div>
-    </div>
-  </div>
+        {' '}
+        React components for your application
+      </h2>
+      <Link to='guides-overview'>
+        <GSButton color='Primary' style='Raised' placeholder='Get Started' />
+      </Link>
+    </Styles.LibraryText>
+  </Styles.HomeDiv>
 );
 
 export default Home;

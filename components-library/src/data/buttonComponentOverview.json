@@ -49,7 +49,13 @@
         "description": "Color"
       },
       "description": "with the GSButton component you can choose between a variety of color buttons",
-      "exampleValues": ["Primary", "Secondary", "Info", "Warning", "Danger"]
+      "exampleValues": [
+        { "id": 1, "value": "Primary" },
+        { "id": 2, "value": "Secondary" },
+        { "id": 3, "value": "Info" },
+        { "id": 4, "value": "Warning" },
+        { "id": 5, "value": "Danger" }
+      ]
     },
     {
       "id": 2,
@@ -58,7 +64,11 @@
         "description": "Size"
       },
       "description": "Choose the size of the GSButton that you prefer",
-      "exampleValues": ["Small", "Medium", "Large"]
+      "exampleValues": [
+        { "id": 1, "value": "Small" },
+        { "id": 2, "value": "Medium" },
+        { "id": 3, "value": "Large" }
+      ]
     },
     {
       "id": 3,
@@ -67,7 +77,12 @@
         "description": "Style"
       },
       "description": "You can choose the style that you prefer for the GSButton component",
-      "exampleValues": ["Standard", "Rounded", "Raised", "Text"]
+      "exampleValues": [
+        { "id": 1, "value": "Standard" },
+        { "id": 2, "value": "Rounded" },
+        { "id": 3, "value": "Raised" },
+        { "id": 4, "value": "Text" }
+      ]
     },
     {
       "id": 4,
@@ -76,7 +91,7 @@
         "description": "Disabled"
       },
       "description": "disable your GSAutocomplete component",
-      "exampleValues": [true]
+      "exampleValues": [{ "id": 1, "value": true }]
     }
   ]
 }

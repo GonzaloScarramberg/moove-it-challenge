@@ -1,23 +1,28 @@
 import React from 'react';
 import { Route, BrowserRouter as Router, Switch } from 'react-router-dom';
+import 'styled-components/macro';
 import Home from './home-page/home';
+import DocumentationPage from './documentation-page/documentation-page';
 import LibraryPage from './library-page/library-page';
-import Footer from './shared/footer';
-import Header from './shared/header';
+import Footer from './shared/footer/footer';
+import Header from './shared/header/header';
 
 const RouterSetup = () => (
-  <div className='container'>
-    <Router>
+  <Router>
+    <div
+      css={`
+        padding-top: 3.2rem;
+      `}
+    >
       <Header />
       <Switch>
-        <div style={{ paddingTop: '3.2rem' }}>
-          <Route exact path='/' component={Home} />
-          <Route exact path='/components-overview' component={LibraryPage} />
-        </div>
+        <Route exact path='/' component={Home} />
+        <Route exact path='/components-overview' component={LibraryPage} />
+        <Route exact path='/guides-overview' component={DocumentationPage} />
       </Switch>
       <Footer />
-    </Router>
-  </div>
+    </div>
+  </Router>
 );
 
 export default RouterSetup;

@@ -1,27 +1,44 @@
 import styled, { css } from 'styled-components';
 
 const FeatureField = styled.div`
-  padding: 2rem 0rem;
+  padding-bottom: 2rem;
+`;
+
+const ExampleFeatureList = styled.div`
+  display: flex;
+  border: 1px solid black;
+  border-radius: 3px;
+  grid-row-gap: 20px;
+  width: 100%;
+  flex-direction: ${(props) =>
+    props.componentName === 'GSButton' ? 'row' : 'column'};
+  flex-wrap: wrap;
+  align-items: center;
+`;
+
+const ExampleFeatureField = styled.div`
+  padding: 2rem 1rem;
+  width: ${(props) => props.componentName !== 'GSButton' && css`70%`};
 `;
 
 const APITableField = styled.div`
   padding: 2rem 0rem;
 `;
 
-const ExampleFeatureList = styled.div`
-  display: flex;
-  flex-flow: wrap;
-  grid-row-gap: 20px;
-  width: 100%;
-  flex-direction: ${(props) =>
-    props.componentName === 'GSButton' ? 'row' : 'column'};
-  justify-content: center;
-  align-items: center;
+const APIValueDescription = styled.td`
+  font-family: Courier New, monospace;
 `;
 
-const ExampleFeatureField = styled.div`
-  flex: ${(props) =>
-    props.componentName === 'GSButton' ? css`1 1 20%` : css`1 1 60%`};
+const APIDefaultValue = styled.td`
+  color: #0c0a3e;
+  font-weight: bold;
 `;
 
-export { FeatureField, APITableField, ExampleFeatureList, ExampleFeatureField };
+export {
+  FeatureField,
+  APITableField,
+  ExampleFeatureList,
+  ExampleFeatureField,
+  APIValueDescription,
+  APIDefaultValue,
+};

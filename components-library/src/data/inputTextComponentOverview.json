@@ -61,7 +61,11 @@
         "description": "Style"
       },
       "description": "with the GSInputText component you can choose the style that you want to give to the input field",
-      "exampleValues": ["Bottom-Lined", "Outlined", "Filled"]
+      "exampleValues": [
+        { "id": 1, "value": "Bottom-Lined" },
+        { "id": 2, "value": "Outlined" },
+        { "id": 3, "value": "Filled" }
+      ]
     },
     {
       "id": 2,
@@ -70,7 +74,7 @@
         "description": "Has Reset Button"
       },
       "description": "with the GSInputText component you can choose if you want to enable the reset button so you can erase the input value",
-      "exampleValues": [true]
+      "exampleValues": [{ "id": 1, "value": true }]
     },
     {
       "id": 3,
@@ -79,7 +83,7 @@
         "description": "Disabled"
       },
       "description": "disable your GSInputText component",
-      "exampleValues": [true]
+      "exampleValues": [{ "id": 1, "value": true }]
     }
   ]
 }

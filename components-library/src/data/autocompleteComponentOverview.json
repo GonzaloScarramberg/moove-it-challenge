@@ -55,7 +55,11 @@
         "description": "Max Height"
       },
       "description": "with the GSAutocomplete component you can choose the maximun height of the autocomplete items list",
-      "exampleValues": ["100", "200", "300"]
+      "exampleValues": [
+        { "id": 1, "value": "100" },
+        { "id": 2, "value": "200" },
+        { "id": 3, "value": "300" }
+      ]
     },
     {
       "id": 2,
@@ -64,7 +68,7 @@
         "description": "Disabled"
       },
       "description": "disable your GSAutocomplete component",
-      "exampleValues": [true]
+      "exampleValues": [{ "id": 1, "value": true }]
     },
     {
       "id": 3,
@@ -73,7 +77,10 @@
         "description": "No Results Message"
       },
       "description": "with the GSAutocomplete you can set the message that you want to display when there are no results found",
-      "exampleValues": ["No Results were found", "The search found no results"]
+      "exampleValues": [
+        { "id": 1, "value": "No Results were found" },
+        { "id": 2, "value": "The search found no results" }
+      ]
     }
   ]
 }

@@ -55,7 +55,7 @@
         "description": "Multi Select"
       },
       "description": "with the GSSelect Input you can choose to select more than one option",
-      "exampleValues": [true]
+      "exampleValues": [{ "id": 1, "value": true }]
     },
     {
       "id": 2,
@@ -64,7 +64,7 @@
         "description": "Styled Item"
       },
       "description": "with the GSSelect Input you can style the items that you choose",
-      "exampleValues": [true]
+      "exampleValues": [{ "id": 1, "value": true }]
     },
     {
       "id": 3,
@@ -73,7 +73,11 @@
         "description": "Max Height"
       },
       "description": "with the GSSelectInput component you can choose the maximun height of the autocomplete items list",
-      "exampleValues": ["100", "200", "300"]
+      "exampleValues": [
+        { "id": 1, "value": "100" },
+        { "id": 2, "value": "200" },
+        { "id": 3, "value": "300" }
+      ]
     }
   ]
 }

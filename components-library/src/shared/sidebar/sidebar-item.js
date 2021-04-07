@@ -1,14 +1,11 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import { SidebarItemButton } from './sidebar-styles';
 
 const SidebarItem = ({ itemName, handleTabSelection }) => (
-  <button
-    type='button'
-    style={{ fontSize: '1rem', flex: '1 1 auto', padding: '1rem' }}
-    onClick={() => handleTabSelection(itemName)}
-  >
+  <SidebarItemButton type='button' onClick={() => handleTabSelection(itemName)}>
     {itemName}
-  </button>
+  </SidebarItemButton>
 );
 
 SidebarItem.propTypes = {

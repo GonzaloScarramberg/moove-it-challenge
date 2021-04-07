@@ -10,7 +10,7 @@ const libraryStyles = {
 const LibraryPage = () => (
   <div style={libraryStyles}>
     <div style={{ flex: '1' }}>
-      <Sidebar />
+      <Sidebar page='components' />
     </div>
     <div style={{ flex: '3' }}>
       <ComponentOverview />

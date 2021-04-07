@@ -1,4 +1,6 @@
-import React from 'react';
+import React, { useState } from 'react';
+import { Prism as SyntaxHighlighter } from 'react-syntax-highlighter';
+import { a11yDark } from 'react-syntax-highlighter/dist/esm/styles/prism';
 import PropTypes from 'prop-types';
 import * as GSComponents from 'gs-ui-library';
 import {
@@ -6,12 +8,19 @@ import {
   FeatureField,
   ExampleFeatureField,
 } from './component-overview-styles';
+import useFetch from '../../shared/useFetch';
 
 const Feature = ({ componentName, props }) => {
   const properties = { ...props };
 
   // eslint-disable-next-line react/prop-types
   const ExampleFeatureComponent = ({ value }) => {
+    const [exampleValue, setExampleValue] = useState();
+
+    const exampleOptions = useFetch(
+      'https://jsonplaceholder.typicode.com/users',
+    ).map((x) => x.name);
+
     switch (componentName) {
       case 'GSButton':
         return (
@@ -22,24 +31,34 @@ const Feature = ({ componentName, props }) => {
       case 'GSInputText':
         return (
           <GSComponents.GSInputText
+            value={exampleValue}
+            onChangeValue={setExampleValue}
             {...{ [properties.featureName.name]: value }}
           />
         );
       case 'GSInputNumber':
         return (
           <GSComponents.GSInputNumber
+            value={exampleValue}
+            onChangeValue={setExampleValue}
             {...{ [properties.featureName.name]: value }}
           />
         );
       case 'GSAutocomplete':
         return (
           <GSComponents.GSAutocomplete
+            options={exampleOptions}
+            value={exampleValue}
+            onChangeValue={setExampleValue}
             {...{ [properties.featureName.name]: value }}
           />
         );
       case 'GSSelectInput':
         return (
           <GSComponents.GSSelectInput
+            options={exampleOptions}
+            value={exampleValue}
+            onChangeValue={setExampleValue}
             {...{ [properties.featureName.name]: value }}
           />
         );
@@ -54,11 +73,22 @@ const Feature = ({ componentName, props }) => {
       <p>{properties.description}</p>
       <ExampleFeatureList componentName={componentName}>
         {properties.exampleValues.map((item) => (
-          <ExampleFeatureField key={item} componentName={componentName}>
-            <ExampleFeatureComponent value={item} />
+          <ExampleFeatureField key={item.id} componentName={componentName}>
+            <ExampleFeatureComponent value={item.value} />
           </ExampleFeatureField>
         ))}
       </ExampleFeatureList>
+      <div>
+        {properties.exampleValues.map((item) => (
+          <SyntaxHighlighter
+            language='javascript'
+            style={a11yDark}
+            key={item.id}
+          >
+            {`<${componentName} ${properties.featureName.name}='${item.value}' />`}
+          </SyntaxHighlighter>
+        ))}
+      </div>
     </FeatureField>
   );
 };
@@ -73,7 +103,14 @@ Feature.propTypes = {
     }).isRequired,
     description: PropTypes.string.isRequired,
     exampleValues: PropTypes.arrayOf(
-      PropTypes.oneOfType([PropTypes.string, PropTypes.number, PropTypes.bool]),
+      PropTypes.shape({
+        id: PropTypes.number.isRequired,
+        value: PropTypes.oneOfType([
+          PropTypes.string,
+          PropTypes.number,
+          PropTypes.bool,
+        ]),
+      }),
     ).isRequired,
   }).isRequired,
 };
