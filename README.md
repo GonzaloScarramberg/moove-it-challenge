@@ -8,7 +8,7 @@ To get the project running on your local machine you need to clone the repositor
 
 `npm install`
 
-The GS UI Library is already included in the package.json son with this command you will have it installed.
+The GS UI Library is already included in the package.json so with this command you will have it installed.
 
 The idea of this app is to showcase all the amazing features and behaviours that you can apply to all components of the library by implementing them in this project.
 
