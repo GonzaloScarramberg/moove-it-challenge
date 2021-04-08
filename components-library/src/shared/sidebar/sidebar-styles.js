@@ -9,6 +9,7 @@ const SidebarDiv = styled.div`
   @media (max-width: 700px) {
     height: 100px;
     border: none;
+    justify-content: center;
   }
 `;
 
@@ -49,12 +50,6 @@ const SidebarItemButton = styled.button`
   padding: 1rem;
   background-position: center;
   transition: background 0.5s;
-  @media (max-width: 700px) {
-    justify-content: center;
-    height: 100%;
-    width: auto;
-  }
-
   &:hover {
     background: #c9c9f3 radial-gradient(circle, transparent 1%, #c9c9f3 1%)
       center/15000%;
@@ -67,6 +62,11 @@ const SidebarItemButton = styled.button`
   &:focus {
     color: #9191dc;
     outline: solid 1px #9191dc;
+  }
+  @media (max-width: 700px) {
+    justify-content: center;
+    height: 100%;
+    width: auto;
   }
 `;
 

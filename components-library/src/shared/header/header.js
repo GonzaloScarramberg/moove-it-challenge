@@ -7,7 +7,7 @@ const Header = () => (
   <Styles.HeaderDiv>
     <Styles.NavbarDiv>
       <div>
-        <Link to='/'>
+        <Link to='/' onClick={() => window.scrollTo(0, 0)}>
           <span
             css={`
               padding: 0 3rem;
@@ -18,7 +18,7 @@ const Header = () => (
         </Link>
       </div>
       <div>
-        <Link to='/components-overview'>
+        <Link to='/components-overview' onClick={() => window.scrollTo(0, 0)}>
           <span
             css={`
               padding-left: 2rem;
@@ -31,7 +31,7 @@ const Header = () => (
             Components
           </span>
         </Link>
-        <Link to='/guides-overview'>
+        <Link to='/guides-overview' onClick={() => window.scrollTo(0, 0)}>
           <span
             css={`
               padding-left: 1rem;
