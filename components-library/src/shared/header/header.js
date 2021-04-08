@@ -23,6 +23,9 @@ const Header = () => (
             css={`
               padding-left: 2rem;
               padding-right: 1rem;
+              @media (max-width: 700px) {
+                padding: 0rem;
+              }
             `}
           >
             Components
@@ -32,6 +35,9 @@ const Header = () => (
           <span
             css={`
               padding-left: 1rem;
+              @media (max-width: 700px) {
+                padding: 0rem;
+              }
             `}
           >
             Guides

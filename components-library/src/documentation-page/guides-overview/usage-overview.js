@@ -7,6 +7,9 @@ const UsageOverview = () => (
   <div
     css={`
       padding: 1rem;
+      @media (max-width: 700px) {
+        padding: 2rem;
+      }
     `}
   >
     {' '}
@@ -17,7 +20,7 @@ const UsageOverview = () => (
       ready to go! Here is an example of how you can import and use the
       component
     </p>
-    <SyntaxHighlighter language='javascript' style={a11yDark}>
+    <SyntaxHighlighter wrapLines language='javascript' style={a11yDark}>
       {`import { GSButton } from 'gs-ui-library'
 
 const ExampleComponent = () =>{

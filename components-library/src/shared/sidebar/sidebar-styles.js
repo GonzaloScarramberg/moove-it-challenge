@@ -6,6 +6,10 @@ const SidebarDiv = styled.div`
   height: 500px;
   flex-direction: column;
   border-right: 1px solid rgba(0, 0, 0, 0.12);
+  @media (max-width: 700px) {
+    height: 100px;
+    border: none;
+  }
 `;
 
 const SidebarTitle = styled.div`
@@ -18,6 +22,9 @@ const SidebarTitle = styled.div`
   border-bottom: 1px solid rgba(0, 0, 0, 0.12);
   justify-content: center;
   padding: 1rem;
+  @media (max-width: 700px) {
+    display: none;
+  }
 `;
 
 const SidebarOptionsList = styled.div`
@@ -26,6 +33,11 @@ const SidebarOptionsList = styled.div`
   height: 55%;
   justify-content: space-between;
   align-items: flex-start;
+  @media (max-width: 700px) {
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+  }
 `;
 
 const SidebarItemButton = styled.button`
@@ -37,6 +49,11 @@ const SidebarItemButton = styled.button`
   padding: 1rem;
   background-position: center;
   transition: background 0.5s;
+  @media (max-width: 700px) {
+    justify-content: center;
+    height: 100%;
+    width: auto;
+  }
 
   &:hover {
     background: #c9c9f3 radial-gradient(circle, transparent 1%, #c9c9f3 1%)

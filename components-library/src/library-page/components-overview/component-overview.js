@@ -15,6 +15,9 @@ const ComponentOverview = () => {
     <div
       css={`
         padding: 1rem;
+        @media (max-width: 700px) {
+          padding: 2rem;
+        }
       `}
     >
       <h1>{componentOverview.name}</h1>

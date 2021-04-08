@@ -1,5 +1,13 @@
 import styled, { css } from 'styled-components';
 
+const LibraryPageDiv = styled.div`
+  display: flex;
+  flex-direction: row;
+  @media (max-width: 700px) {
+    flex-direction: column;
+  }
+`;
+
 const FeatureField = styled.div`
   padding-bottom: 2rem;
 `;
@@ -35,6 +43,7 @@ const APIDefaultValue = styled.td`
 `;
 
 export {
+  LibraryPageDiv,
   FeatureField,
   APITableField,
   ExampleFeatureList,

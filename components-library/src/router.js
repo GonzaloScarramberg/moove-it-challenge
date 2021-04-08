@@ -12,6 +12,9 @@ const RouterSetup = () => (
     <div
       css={`
         padding-top: 3.2rem;
+        @media (max-width: 700px) {
+          padding-top: 5.5rem;
+        }
       `}
     >
       <Header />

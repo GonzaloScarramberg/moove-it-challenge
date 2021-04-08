@@ -38,6 +38,7 @@ const GlobalStyle = createGlobalStyle`
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+  white-space: pre-line!important;
 }
 button {
   background: none;
@@ -50,7 +51,6 @@ button {
 p{
   line-height:1.5;
 }
-
 `;
 
 export default GlobalStyle;

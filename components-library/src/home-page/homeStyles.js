@@ -13,6 +13,20 @@ const LibraryText = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: center;
+  @media (max-width: 700px) {
+    align-items: center;
+  }
+  h1 {
+    font-size: 4rem;
+    font-weight: 400;
+    margin-bottom: 0;
+    @media (max-width: 700px) {
+      font-size: 3.5rem;
+    }
+  }
+  h2 {
+    font-weight: 300;
+  }
 `;
 
 const GetStartedLink = styled(Link)`

@@ -5,23 +5,8 @@ import * as Styles from './homeStyles';
 const Home = () => (
   <Styles.HomeDiv>
     <Styles.LibraryText>
-      <h1
-        css={`
-          font-size: 4rem;
-          font-weight: 400;
-          margin-bottom: 0;
-        `}
-      >
-        GS UI Library
-      </h1>
-      <h2
-        css={`
-          font-weight: 300;
-        `}
-      >
-        {' '}
-        React components for your application
-      </h2>
+      <h1>GS UI Library</h1>
+      <h2>Modern react library</h2>
       <Styles.GetStartedLink to='guides-overview' className='btn'>
         Get started
       </Styles.GetStartedLink>

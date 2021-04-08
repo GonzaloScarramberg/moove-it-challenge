@@ -7,6 +7,9 @@ const ThemesOverview = () => (
   <div
     css={`
       padding: 1rem;
+      @media (max-width: 700px) {
+        padding: 2rem;
+      }
     `}
   >
     {' '}
@@ -15,7 +18,7 @@ const ThemesOverview = () => (
       Theming is available for some properties in the GS UI Library. By default
       those properties are set like this
     </p>
-    <SyntaxHighlighter language='javascript' style={a11yDark}>
+    <SyntaxHighlighter wrapLines language='javascript' style={a11yDark}>
       {`const DefaultTheme = {
 palette: {
 primary: { main: '#2196f3', dark: '#3f91d4' },
@@ -47,7 +50,7 @@ fontFamily: [
       just a few of them. The Theme will keep the default values you did not
       change. Once you have it you can override the default theme like this.
     </p>
-    <SyntaxHighlighter language='javascript' style={a11yDark}>
+    <SyntaxHighlighter wrapLines language='javascript' style={a11yDark}>
       {`import {GSButton, Theme} from 'gs-ui-library'
 
 

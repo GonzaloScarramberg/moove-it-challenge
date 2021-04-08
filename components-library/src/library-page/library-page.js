@@ -2,14 +2,10 @@ import React from 'react';
 import 'styled-components/macro';
 import Sidebar from '../shared/sidebar/sidebar';
 import ComponentOverview from './components-overview/component-overview';
+import { LibraryPageDiv } from './components-overview/component-overview-styles';
 
 const LibraryPage = () => (
-  <div
-    css={`
-      display: flex;
-      flex-direction: row;
-    `}
-  >
+  <LibraryPageDiv>
     <div
       css={`
         flex: 1;
@@ -20,6 +16,9 @@ const LibraryPage = () => (
     <div
       css={`
         flex: 3;
+        @media (max-width: 700px) {
+          flex: 5;
+        }
       `}
     >
       <ComponentOverview />
@@ -27,9 +26,12 @@ const LibraryPage = () => (
     <div
       css={`
         flex: 1;
+        @media (max-width: 700px) {
+          display: none;
+        }
       `}
     />
-  </div>
+  </LibraryPageDiv>
 );
 
 export default LibraryPage;
