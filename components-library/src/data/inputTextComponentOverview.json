@@ -2,49 +2,49 @@
   "id": 4,
   "name": "Input Text",
   "componentName": "GSInputText",
-  "description": "This is an example of description that could be used for this kind of situations where your dont know what to say",
+  "description": "The GSInputText is and amazing alternative to create forms with fancy styles and behaviours",
   "api": [
     {
       "id": 1,
       "propertyName": "style",
       "defaultValue": "Bottom-Lined",
-      "description": "with this property you set the style of the input"
+      "description": "With this property you set the style of the input"
     },
     {
       "id": 2,
       "propertyName": "maxLength",
       "defaultValue": "0",
-      "description": "with this property you can limit the number of characters"
+      "description": "With this property you can limit the number of characters"
     },
     {
       "id": 3,
       "propertyName": "hasResetButton",
       "defaultValue": false,
-      "description": "with this property you can enable the reset button to erase the input value"
+      "description": "With this property you can enable the reset button to erase the input value"
     },
     {
       "id": 4,
       "propertyName": "placeholder",
       "defaultValue": "Insert a number",
-      "description": "choose the placeholder"
+      "description": "Choose the placeholder"
     },
     {
       "id": 5,
       "propertyName": "fieldName",
       "defaultValue": "Default field",
-      "description": "choose the name of the input value field"
+      "description": "Choose the name of the input value field"
     },
     {
       "id": 6,
       "propertyName": "disabled",
       "defaultValue": false,
-      "description": "with this property you disable the component"
+      "description": "With this property you disable the component"
     },
     {
       "id": 7,
       "propertyName": "value",
       "defaultValue": "",
-      "description": "this is the value of the autocomplete"
+      "description": "This is the value of the autocomplete"
     },
     {
       "id": 8,
@@ -60,7 +60,7 @@
         "name": "style",
         "description": "Style"
       },
-      "description": "with the GSInputText component you can choose the style that you want to give to the input field",
+      "description": "With the GSInputText component you can choose the style that you want to give to the input field",
       "exampleValues": [
         { "id": 1, "value": "Bottom-Lined" },
         { "id": 2, "value": "Outlined" },
@@ -73,7 +73,7 @@
         "name": "hasResetButton",
         "description": "Has Reset Button"
       },
-      "description": "with the GSInputText component you can choose if you want to enable the reset button so you can erase the input value",
+      "description": "With the GSInputText component you can choose if you want to enable the reset button so you can erase the input value",
       "exampleValues": [{ "id": 1, "value": true }]
     },
     {
@@ -82,7 +82,7 @@
         "name": "disabled",
         "description": "Disabled"
       },
-      "description": "disable your GSInputText component",
+      "description": "Disable your GSInputText component",
       "exampleValues": [{ "id": 1, "value": true }]
     }
   ]

@@ -2,37 +2,37 @@
   "id": 2,
   "name": "Button",
   "componentName": "GSButton",
-  "description": "This is an example of description that could be used for this kind of situations where your dont know what to say",
+  "description": "The GSButton is an elegant component with multiple styles, colors and sizes that you can choose for your project",
   "api": [
     {
       "id": 1,
       "propertyName": "color",
       "defaultValue": "Primary",
-      "description": "you can choose between a variety of color buttons"
+      "description": "You can choose between a variety of color buttons"
     },
     {
       "id": 2,
       "propertyName": "placeholder",
       "defaultValue": "Default Button",
-      "description": "choose the placeholder"
+      "description": "Choose the placeholder"
     },
     {
       "id": 3,
       "propertyName": "size",
       "defaultValue": "Small",
-      "description": "with this property you choose the size of the button"
+      "description": "With this property you choose the size of the button"
     },
     {
       "id": 4,
-      "propertyName": "style",
+      "propertyName": "variant",
       "defaultValue": "Standard",
-      "description": "with this property you can set the style of the button"
+      "description": "With this property you can set the style of the button"
     },
     {
       "id": 5,
       "propertyName": "disabled",
       "defaultValue": false,
-      "description": "with this property you disable the button"
+      "description": "With this property you disable the button"
     },
     {
       "id": 6,
@@ -48,7 +48,7 @@
         "name": "color",
         "description": "Color"
       },
-      "description": "with the GSButton component you can choose between a variety of color buttons",
+      "description": "With the GSButton component you can choose between a variety of color buttons",
       "exampleValues": [
         { "id": 1, "value": "Primary" },
         { "id": 2, "value": "Secondary" },
@@ -73,8 +73,8 @@
     {
       "id": 3,
       "featureName": {
-        "name": "style",
-        "description": "Style"
+        "name": "variant",
+        "description": "Variant"
       },
       "description": "You can choose the style that you prefer for the GSButton component",
       "exampleValues": [
@@ -90,7 +90,7 @@
         "name": "disabled",
         "description": "Disabled"
       },
-      "description": "disable your GSAutocomplete component",
+      "description": "Disable your GSAutocomplete component",
       "exampleValues": [{ "id": 1, "value": true }]
     }
   ]

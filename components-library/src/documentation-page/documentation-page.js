@@ -6,25 +6,34 @@ import Sidebar from '../shared/sidebar/sidebar';
 const DocumentationPage = () => {
   const guideOverview = useSelector((state) => state.guideOverviewReducer);
 
+  React.useEffect(() => {}, []);
+
   return (
     <div
       css={`
-        width: 100%;
         display: flex;
+        flex-direction: row;
       `}
     >
-      <div style={{ flex: '1' }}>
+      <div
+        css={`
+          flex: 1;
+        `}
+      >
         <Sidebar page='documentation' />
       </div>
       <div
         css={`
-          padding: 1rem;
+          flex: 3;
         `}
-        style={{ flex: '3' }}
       >
         {guideOverview}
       </div>
-      <div style={{ flex: '1' }} />
+      <div
+        css={`
+          flex: 1;
+        `}
+      />
     </div>
   );
 };

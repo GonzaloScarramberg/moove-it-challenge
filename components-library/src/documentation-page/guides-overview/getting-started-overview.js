@@ -1,9 +1,14 @@
 import React from 'react';
+import 'styled-components/macro';
 import { Prism as SyntaxHighlighter } from 'react-syntax-highlighter';
 import { a11yDark } from 'react-syntax-highlighter/dist/esm/styles/prism';
 
 const GettingStartedOverview = () => (
-  <div>
+  <div
+    css={`
+      padding: 1rem;
+    `}
+  >
     <h1>Getting started</h1>
     <p>
       The first step to use the <b>GS UI library</b> is to install the package

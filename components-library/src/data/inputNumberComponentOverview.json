@@ -2,37 +2,37 @@
   "id": 3,
   "name": "Input Number",
   "componentName": "GSInputNumber",
-  "description": "This is an example of description that could be used for this kind of situations where your dont know what to say",
+  "description": "The GSInput Number gives you various alternatives to display numbers and their formats",
   "api": [
     {
       "id": 1,
       "propertyName": "format",
       "defaultValue": "no-grouped",
-      "description": "with this property you set the format of the numbers"
+      "description": "With this property you set the format of the numbers"
     },
     {
       "id": 2,
       "propertyName": "buttons",
       "defaultValue": "",
-      "description": "with this property you can add the sum and minus operator and you can choose the number of increase or decrease"
+      "description": "With this property you can add the sum and minus operator and you can choose the number of increase or decrease"
     },
     {
       "id": 3,
       "propertyName": "placeholder",
       "defaultValue": "Insert a number",
-      "description": "choose the placeholder"
+      "description": "Choose the placeholder"
     },
     {
       "id": 4,
       "propertyName": "disabled",
       "defaultValue": false,
-      "description": "with this property you disable the component"
+      "description": "With this property you disable the component"
     },
     {
       "id": 5,
       "propertyName": "value",
       "defaultValue": "",
-      "description": "this is the value of the autocomplete"
+      "description": "This is the value of the autocomplete"
     },
     {
       "id": 6,
@@ -48,7 +48,7 @@
         "name": "format",
         "description": "Format"
       },
-      "description": "with the GSInputNumber component you can choose the format that you want to give to the number",
+      "description": "With the GSInputNumber component you can choose the format that you want to give to the number",
       "exampleValues": [
         { "id": 1, "value": "no-grouped" },
         { "id": 2, "value": "grouped-commas" },
@@ -61,7 +61,7 @@
         "name": "buttons",
         "description": "Buttons"
       },
-      "description": "with the GSInputNumber component you can add the sum and minus operator and you can set the increase or decrease",
+      "description": "With the GSInputNumber component you can add the sum and minus operator and you can set the increase or decrease",
       "exampleValues": [
         { "id": 1, "value": "1" },
         { "id": 2, "value": "2" },
@@ -74,7 +74,7 @@
         "name": "disabled",
         "description": "Disabled"
       },
-      "description": "disable your GSInputNumber component",
+      "description": "Disable your GSInputNumber component",
       "exampleValues": [{ "id": 1, "value": true }]
     }
   ]

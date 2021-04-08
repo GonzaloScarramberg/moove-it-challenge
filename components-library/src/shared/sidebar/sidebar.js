@@ -1,5 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import 'styled-components/macro';
 import { useDispatch } from 'react-redux';
 import * as ComponentActions from '../../state-management/actions/componentActions';
 import * as GuideActions from '../../state-management/actions/guideActions';
@@ -50,7 +51,23 @@ const Sidebar = ({ page }) => {
   return (
     <Styles.SidebarDiv>
       <Styles.SidebarTitle>
-        {page === 'documentation' ? <h3>Guides</h3> : <h3>Components</h3>}
+        {page === 'documentation' ? (
+          <h3
+            css={`
+              font-weight: 400;
+            `}
+          >
+            Guides
+          </h3>
+        ) : (
+          <h3
+            css={`
+              font-weight: 400;
+            `}
+          >
+            Components
+          </h3>
+        )}
       </Styles.SidebarTitle>
       <Styles.SidebarOptionsList>
         {page === 'documentation'

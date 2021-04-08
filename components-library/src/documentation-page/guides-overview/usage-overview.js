@@ -1,9 +1,14 @@
 import React from 'react';
+import 'styled-components/macro';
 import { Prism as SyntaxHighlighter } from 'react-syntax-highlighter';
 import { a11yDark } from 'react-syntax-highlighter/dist/esm/styles/prism';
 
 const UsageOverview = () => (
-  <div>
+  <div
+    css={`
+      padding: 1rem;
+    `}
+  >
     {' '}
     <h1>Usage Example</h1>
     <p>

@@ -1,9 +1,14 @@
 import React from 'react';
+import 'styled-components/macro';
 import { Prism as SyntaxHighlighter } from 'react-syntax-highlighter';
 import { a11yDark } from 'react-syntax-highlighter/dist/esm/styles/prism';
 
 const ThemesOverview = () => (
-  <div>
+  <div
+    css={`
+      padding: 1rem;
+    `}
+  >
     {' '}
     <h1>Themes</h1>
     <p>
@@ -38,8 +43,9 @@ fontFamily: [
     </SyntaxHighlighter>
     <p>
       In order to change the themes, you can create a new one. The format has to
-      be the same as the default one. Once you have it you can override the
-      default theme like this
+      be the same as the default one. You can choose to change all properties or
+      just a few of them. The Theme will keep the default values you did not
+      change. Once you have it you can override the default theme like this.
     </p>
     <SyntaxHighlighter language='javascript' style={a11yDark}>
       {`import {GSButton, Theme} from 'gs-ui-library'
@@ -50,7 +56,7 @@ fontFamily: [
 </Theme>`}
     </SyntaxHighlighter>
     <p>
-      You need to import Theme and the component has to be wrapped inside it.
+      You need to import Theme and the component has to be wrapped inside of it.
       With the theme property you can add you custom themes and override the
       existing one
     </p>

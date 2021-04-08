@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import { Link } from 'react-router-dom';
 
 const HomeDiv = styled.div`
   height: 359px;
@@ -14,4 +15,19 @@ const LibraryText = styled.div`
   justify-content: center;
 `;
 
-export { HomeDiv, LibraryText };
+const GetStartedLink = styled(Link)`
+  background: #0c0a3e;
+  height: 2rem;
+  border-radius: 5px;
+  display: flex;
+  color: white;
+  align-items: center;
+  padding: 0.5rem;
+  width: 25%;
+  justify-content: center;
+  &:hover {
+    color: white;
+  }
+`;
+
+export { HomeDiv, LibraryText, GetStartedLink };

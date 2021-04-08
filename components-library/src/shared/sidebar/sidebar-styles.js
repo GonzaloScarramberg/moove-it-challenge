@@ -9,10 +9,12 @@ const SidebarDiv = styled.div`
 `;
 
 const SidebarTitle = styled.div`
-  height: 15%;
+  background: #0c0a3e;
+  color: white;
+  height: 10%;
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: flex-start;
   border-bottom: 1px solid rgba(0, 0, 0, 0.12);
   justify-content: center;
   padding: 1rem;
@@ -21,14 +23,34 @@ const SidebarTitle = styled.div`
 const SidebarOptionsList = styled.div`
   display: flex;
   flex-direction: column;
-  height: 85%;
+  height: 55%;
   justify-content: space-between;
+  align-items: flex-start;
 `;
 
 const SidebarItemButton = styled.button`
+  align-items: center;
+  width: 100%;
+  display: flex;
   font-size: 1rem;
   flex: 1 1 auto;
   padding: 1rem;
+  background-position: center;
+  transition: background 0.5s;
+
+  &:hover {
+    background: #c9c9f3 radial-gradient(circle, transparent 1%, #c9c9f3 1%)
+      center/15000%;
+  }
+  &:active {
+    background-color: #9191dc;
+    background-size: 100%;
+    transition: background 0s;
+  }
+  &:focus {
+    color: #9191dc;
+    outline: solid 1px #9191dc;
+  }
 `;
 
 export { SidebarDiv, SidebarTitle, SidebarOptionsList, SidebarItemButton };

@@ -1,8 +1,5 @@
-/* eslint-disable react/style-prop-object */
 import React from 'react';
-import { Link } from 'react-router-dom';
 import 'styled-components/macro';
-import { GSButton } from 'gs-ui-library';
 import * as Styles from './homeStyles';
 
 const Home = () => (
@@ -25,9 +22,9 @@ const Home = () => (
         {' '}
         React components for your application
       </h2>
-      <Link to='guides-overview'>
-        <GSButton color='Primary' style='Raised' placeholder='Get Started' />
-      </Link>
+      <Styles.GetStartedLink to='guides-overview' className='btn'>
+        Get started
+      </Styles.GetStartedLink>
     </Styles.LibraryText>
   </Styles.HomeDiv>
 );

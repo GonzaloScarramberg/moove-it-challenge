@@ -47,6 +47,9 @@ button {
     background-color: #e7e7e7;
   }
 }
+p{
+  line-height:1.5;
+}
 
 `;
 

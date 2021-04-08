@@ -13,13 +13,13 @@ import useFetch from '../../shared/useFetch';
 const Feature = ({ componentName, props }) => {
   const properties = { ...props };
 
+  const data = useFetch('https://jsonplaceholder.typicode.com/users').map(
+    (x) => x.name,
+  );
+
   // eslint-disable-next-line react/prop-types
   const ExampleFeatureComponent = ({ value }) => {
     const [exampleValue, setExampleValue] = useState();
-
-    const exampleOptions = useFetch(
-      'https://jsonplaceholder.typicode.com/users',
-    ).map((x) => x.name);
 
     switch (componentName) {
       case 'GSButton':
@@ -47,7 +47,7 @@ const Feature = ({ componentName, props }) => {
       case 'GSAutocomplete':
         return (
           <GSComponents.GSAutocomplete
-            options={exampleOptions}
+            options={data}
             value={exampleValue}
             onChangeValue={setExampleValue}
             {...{ [properties.featureName.name]: value }}
@@ -56,7 +56,7 @@ const Feature = ({ componentName, props }) => {
       case 'GSSelectInput':
         return (
           <GSComponents.GSSelectInput
-            options={exampleOptions}
+            options={data}
             value={exampleValue}
             onChangeValue={setExampleValue}
             {...{ [properties.featureName.name]: value }}
