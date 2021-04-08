@@ -19,3 +19,5 @@ To run the project all you have to do is run:
 `npm start`
 
 this will get the project running and you will be able to access the app and see all the components and its features and also you will be able to see the install, usage and theme guides to include the **GS UI Library** in your project
+
+The **GS UI Library** is available as an [npm package](https://www.npmjs.com/package/gs-ui-library)
