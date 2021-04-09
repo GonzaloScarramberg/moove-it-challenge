@@ -2,7 +2,7 @@ import styled from 'styled-components';
 import { Link } from 'react-router-dom';
 
 const HomeDiv = styled.div`
-  height: 359px;
+  min-height: calc(90vh - 120px);
   display: flex;
   color: #0c0a3e;
   justify-content: center;
