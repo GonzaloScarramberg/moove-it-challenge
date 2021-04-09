@@ -9,6 +9,10 @@ const LibraryPage = () => (
     <div
       css={`
         flex: 1;
+        min-height: calc(90vh - 120px);
+        @media (max-width: 700px) {
+          min-height: auto;
+        }
       `}
     >
       <Sidebar page='components' />
